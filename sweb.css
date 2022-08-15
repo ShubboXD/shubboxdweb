@@ -83,7 +83,11 @@ width: 100%;
     transition: 1s;
 }
 
-nav.fa{
+nav.fa fa-bars{
+    display: none;
+
+}
+nav.fa fa-times{
     display: none;
 }
 @media(max-width: 700px){
