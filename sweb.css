@@ -80,14 +80,9 @@ width: 100%;
 .t23:hover{
     border: 1px solid rgb(141, 142, 238);
     background: rgb(141, 142, 238);
-    transition: 1s;
+    transition: 1s
 }
-
-nav.fa fa-bars{
-    display: none;
-
-}
-nav.fa fa-times{
+nav.fa{
     display: none;
 }
 @media(max-width: 700px){
@@ -112,7 +107,7 @@ nav img {
     z-index: 2;
 
     }
-    nav.fa fa-bars{
+    nav.fa{
         display: block;
         color: #fff;
         margin: 10px;
@@ -123,3 +118,4 @@ nav img {
     padding: 30px;
 }
 }
+
