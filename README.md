@@ -1,2 +1,3 @@
 deployed at https://shubboxd.netlify.app/
-probably abandoned
+<br>
+kinda abandoned the project
