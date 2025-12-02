@@ -1,57 +1,115 @@
-
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ShubboXD - Home</title>
+    <title>ShubboXD - Biography</title>
     <link rel="stylesheet" href="sweb.css" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
-    />
-  </head>
-  <body>
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
     <section class="header">
-      <nav>
-        <a href="sweb.html"> <img src="images/logo.jpg" /></a>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap"
-          rel="stylesheet"
-        />
-        <div class="divlin" id="navlinks">
-          <i class="fa fa-times" onclick="hm()"></i>
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Account</a></li>
-            <li><a href="">Anime</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-          <i class="fa fa-bars" onclick="sm()"></i>
+        <nav>
+            <a href="index.html" class="logo">ShubboXD</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#interests">Interests</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Subhodip Sikdar</h1>
+            <p>Anime + Coding</p>
+            <div class="social-links">
+                <a href="https://github.com/ShubboXD" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://anilist.co/user/Shubbo" target="_blank"><i class="fas fa-tv"></i></a>
+            </div>
         </div>
-      </nav>
-      <div class="tb">
-        <h1>ShubboXD's Anime Server</h1>
-        <p>
-          Anime Is One Of The Best Thing To Watch.It's The Best Thing I Can
-          Reccomend
-        </p>
-        <a href="https://anilist.co/search/anime" target="_blank" class="t23"
-          >Visit This Web To See What's Trending Now</a
-        >
-      </div>
     </section>
-    <!---------JavaScript For Toggle Menu---------->
+
+    <section class="about" id="about">
+        <h1>About Me</h1>
+        <div class="row">
+            <div class="about-col">
+                <img src="images/anime_profile_avatar.png" alt="Profile Picture"
+                    onerror="this.src='https://via.placeholder.com/500x500.png?text=Profile+Pic'">
+            </div>
+            <div class="about-col">
+                <p><strong>Name:</strong> Subhodip Sikdar (Shubbo)</p>
+                <p><strong>Age:</strong> 18</p>
+                <p><strong>From:</strong> Kolkata, India</p>
+                <p><strong>Personality:</strong> INTJ-T</p>
+                <p><strong>Philosophy:</strong> I prefer intellectual solitude and focus on personal development and
+                    technology. I believe in a future where humans and technology merge.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h1>Tech & Skills</h1>
+        <div class="row">
+            <div class="skill-col">
+                <h3>Languages</h3>
+                <p>Learning Rust</p>
+            </div>
+            <div class="skill-col">
+                <h3>System</h3>
+                <p>Arch Linux + Hyperland</p>
+                <p>Vim Keybinds</p>
+            </div>
+            <div class="skill-col">
+                <h3>Hardware</h3>
+                <p>Ryzen 5 5600G</p>
+                <p>16GB RAM</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="academic">
+        <h1>Academic Status</h1>
+        <p>Class 12 — CBSE</p>
+        <p>Subjects: PCM + Computer Science + English</p>
+    </section>
+
+    <section class="interests" id="interests">
+        <h1>Interests</h1>
+        <p>Systems Programming, AI, Security, Microeconomics, Biotech, Finance</p>
+        <p>Japan (Culture, Tech), Anime</p>
+    </section>
+
+    <section class="footer" id="contact">
+        <h4>Connect With Me</h4>
+        <p>Check out my projects and anime list.</p>
+        <div class="icons">
+            <a href="https://github.com/ShubboXD" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://anilist.co/user/Shubbo" target="_blank"><i class="fas fa-tv"></i></a>
+        </div>
+    </section>
+
     <script>
-      var navlinks = document.getElementById("navlinks");
-      function sm() {
-        navlinks.style.right = "0";
-      }
-      function hm() {
-        navlinks.style.right = "-200px";
-      }
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
     </script>
-  </body>
+</body>
+
 </html>
